@@ -1,0 +1,27 @@
+gitpod /workspace/Ubuntu (main) $ docker run ubuntu
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+dbf6a9befcde: Pull complete 
+Digest: sha256:dfd64a3b4296d8c9b62aa3309984f8620b98d87e47492599ee20739e8eb54fbf
+Status: Downloaded newer image for ubuntu:latest
+gitpod /workspace/Ubuntu (main) $ docker images
+REPOSITORY   TAG       IMAGE ID       CREATED       SIZE
+ubuntu       latest    3b418d7b466a   5 weeks ago   77.8MB
+gitpod /workspace/Ubuntu (main) $ docker run -it ubuntu bash
+root@d420f5906a13:/# echo "Hello World!
+> "
+Hello World!
+
+root@d420f5906a13:/# cat /etc/os-release
+PRETTY_NAME="Ubuntu 22.04.2 LTS"
+NAME="Ubuntu"
+VERSION_ID="22.04"
+VERSION="22.04.2 LTS (Jammy Jellyfish)"
+VERSION_CODENAME=jammy
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=jammy
